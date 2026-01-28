@@ -1,0 +1,56 @@
+<!doctype html>
+<link rel="stylesheet" href="styles.css" />
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aarne Ylösen verkkosivu - Tietoa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <header class="header">
+    <h1 class="logo">Syksy</h1>
+
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="Kesa.html">Kesä</a></li>
+        <li><a href="Kevat.html">Kevät</a></li>
+        <li><a href="Talvi.html">Talvi</a></li>
+        <li><a href="Syksy.html">Syksy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Syksy</h2>
+      <p class="big">
+        Syksy on vuodenaika, joka sijoittuu kesän ja talven väliin. Suomessa syksy
+        alkaa yleensä syyskuussa ja kestää marraskuuhun asti. Syksyn aikana
+        lämpötilat alkavat laskea, päivät lyhenevät ja luonnossa tapahtuu
+        merkittäviä muutoksia.
+      </p>
+      <p class="big">
+        Yksi syksyn tunnusmerkeistä on lehtien värimuutos. Monien puiden lehdet
+        muuttuvat keltaisiksi, oransseiksi ja punaisiksi ennen kuin ne putoavat
+        maahan. Tämä johtuu siitä, että kasvit valmistautuvat talveen ja
+        vähentävät yhteyttämistä.
+      </p>
+      <p class="big">
+        Syksy on myös sadonkorjuun aikaa. Monet hedelmät ja vihannekset, kuten
+        omenat, kurpitsat ja perunat, ovat valmiita kerättäväksi. Lisäksi syksy
+        on metsästyksen ja sienestyskauden alkamisen aikaa monille ihmisille.
+      </p>
+    </section>
+  </main>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<link rel="stylesheet" href="styles.css" />
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aarne Ylösen verkkosivu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Aarne Ylönen</h1>
+
+      <button class="hamburger" id="hamburger">☰</button>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="Kesa.html">Kesä</a></li>
+          <li><a href="Kevat.html">Kevät</a></li>
+          <li><a href="Talvi.html">Talvi</a></li>
+          <li><a href="Syksy.html">Syksy</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Tervetuloa!</h2>
+        <p class="big">
+          Tämä verkkosivu on Suomen ilmastosta eri vuodenaikoina.<br />
+          Tämän verkkosivun on tuottanut Aarne Ylönen<br />
+          Sähköposti: AG3483@student.jamk.fi<br />
+          Dokumentaatio:
+        </p>
+      </section>
+    </main>
+
+    <footer>Aarne Ylönen</footer>
+    <!-- tekoälyn tuottama koodi -->
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav');
+
+      hamburger.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>

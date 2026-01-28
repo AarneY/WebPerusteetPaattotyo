@@ -1,0 +1,51 @@
+<!doctype html>
+<link rel="stylesheet" href="styles.css" />
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aarne Ylösen verkkosivu - Tietoa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <header class="header">
+    <h1 class="logo">Talvi</h1>
+
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="Kesa.html">Kesä</a></li>
+        <li><a href="Kevat.html">Kevät</a></li>
+        <li><a href="Talvi.html">Talvi</a></li>
+        <li><a href="Syksy.html">Syksy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Talvi</h2>
+      <p class="big">
+        Talvi on vuoden kylmin vuodenaika, joka Suomessa kestää yleensä
+        joulukuusta helmikuuhun. Talvella lämpötilat laskevat usein pakkasen
+        puolelle, ja lumi peittää maan. Talvella päivät ovat lyhyitä ja yöt
+        pitkiä..
+      </p>
+      <p class="big">
+        Talvella monet nauttivat ulkoilusta, kuten hiihtämisestä, luistelusta ja
+        pulkkailusta. Lisäksi talvella vietetään monia juhlia, kuten joulua ja
+        uudenvuoden juhlaa. Talvi on myös aikaa, jolloin monet eläimet vaipuvat
+        horrokseen tai muuttavat lämpimämpiin ilmastoihin selviytyäkseen kylmästä
+        säästä.
+      </p>
+    </section>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</html>
